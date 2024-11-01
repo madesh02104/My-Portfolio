@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from './Hero'
 import AboutMe from './AboutMe'
 import IKnow from './IKnow'
+import Projects from './Projects'
+import OpenToWork from './OpenToWork'
 
 const Body = () => {
   return (
@@ -9,6 +11,8 @@ const Body = () => {
         <Hero />
         <AboutMe />
         <IKnow />
+        <Projects />
+        <OpenToWork />
     </section>
   )
 }

@@ -15,10 +15,10 @@ import { BiSolidTerminal } from "react-icons/bi";
 
 const IKnow = () => {
   return (
-    <section className="mt-64 mb-64 flex flex-col justify-between items-center w-full">
-      <div className="w-full h-80 bg-emerald-600 flex flex-col justify-between items-center rounded-t-3xl">
+    <section className="mt-64 mb-52 flex flex-col justify-between items-center w-full">
+      <div className="w-full h-50 sm:h-60 md:h-80 bg-emerald-600 flex flex-col justify-between items-center ">
         <h2 className="text-4xl text-white font-bold mt-24">I Know,</h2>
-        <div className="carousel overflow-hidden bg-white rounded-md w-[80%] lg:w-[60%] p-4 shadow-lg translate-y-20">
+        <div className="carousel border border-gray-300 overflow-hidden bg-white rounded-md w-[80%] lg:w-[60%] p-4 shadow-lg translate-y-20">
           <div className="carousel-track flex w-fit animate-carousel-scroll ">
             <div className="carousel-slide flex items-center">
               <TbSeo

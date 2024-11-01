@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <section className='bg-emerald-600 w-full'>
+
+    </section>
   )
 }
 
