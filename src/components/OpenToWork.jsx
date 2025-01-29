@@ -12,8 +12,22 @@ const OpenToWork = () => {
         </p>
       </div>
       <div className="flex flex-col justify-between items-center gap-5">
-        <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mt-6">Want to collab for a project ?</h4>
-        <button className='font-medium text-xl sm:text-2xl p-1 px-4 text-emerald-600 border-2 border-emerald-600 rounded-2xl transition ease-in delay-100 duration-100 hover:bg-emerald-600 hover:text-white active:scale-90'>Ping me !</button>
+        <h4 className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mt-6">
+          Want to collab for a project ?
+        </h4>
+        <button
+          onClick={() => {
+            const email = "madesh02104@gmail.com";
+            const subject = "Hello from your portfolio!";
+            const body = "Hi, I found your portfolio and wanted to connect...";
+            window.open(
+              `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, "_blank"
+            );
+          }}
+          className="font-medium text-xl sm:text-2xl p-1 px-4 text-emerald-600 border-2 border-emerald-600 rounded-2xl transition ease-in delay-100 duration-100 hover:bg-emerald-600 hover:text-white active:scale-90"
+        >
+          Ping me !
+        </button>
       </div>
     </section>
   );

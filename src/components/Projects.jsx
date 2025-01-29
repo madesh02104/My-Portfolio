@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className='mb-24 flex flex-col justify-center items-center w-full'>
         <h2 className="text-4xl text-gray-800 font-bold">I have built,</h2>
-        <div className='w-full mt-16 mb-8 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='w-[100%] md:w-[100%] lg:w-[75%] mt-16 mb-8 px-4 grid grid-cols-1 md:grid-cols-2 gap-6'>
             <Project 
                 imageSource={shoppingImage}
                 title='Shopping Site' 
@@ -28,7 +28,7 @@ const Projects = () => {
                 liveLink='https://madesh02104.github.io/javascript-projects/todo-list/dist' 
             />
         </div>
-        <a href="https://github.com/madesh02104" target='_blank' className=' text-lg mr-4 md:self-end hover:text-emerald-500'>View more on github &#8594;</a>
+        <a href="https://github.com/madesh02104" target='_blank' className=' text-lg mr-16 hover:text-emerald-500'>View more on github &#8594;</a>
     </section>
   )
 }
