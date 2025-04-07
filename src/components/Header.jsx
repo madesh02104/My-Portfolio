@@ -1,9 +1,7 @@
-import React from "react";
-
 const Header = ({ scrollToAbout }) => {
   return (
     <section className="flex justify-between m-8 mx-8 md:mx-16 lg:mx-24">
-      <p 
+      <p
         onClick={scrollToAbout}
         className="text-gray-600 font-medium text-xl sm:text-2xl p-1 rounded-lg transition ease-in delay-100 duration-100 hover:border-b-2 cursor-pointer"
       >
@@ -15,7 +13,9 @@ const Header = ({ scrollToAbout }) => {
           const subject = "Hello from your portfolio!";
           const body = "Hi, I found your portfolio and wanted to connect...";
           window.open(
-            `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+            `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`,
             "_blank"
           );
         }}

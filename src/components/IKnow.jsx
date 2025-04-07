@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaGitAlt,
   FaGithub,
@@ -7,9 +6,22 @@ import {
   FaJs,
   FaReact,
   FaFigma,
+  FaNodeJs,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJest, SiWebpack, SiGoogleads, SiNetlify } from "react-icons/si";
+import {
+  SiJest,
+  SiWebpack,
+  SiGoogleads,
+  SiNetlify,
+  SiExpress,
+  SiNextdotjs,
+  SiEjs,
+  SiFirebase,
+  SiMongodb,
+  SiPostgresql,
+  SiPrisma,
+} from "react-icons/si";
 import { TbSeo, TbApi } from "react-icons/tb";
 import { BiSolidTerminal } from "react-icons/bi";
 
@@ -23,125 +35,251 @@ const IKnow = () => {
             <div className="carousel-slide flex items-center">
               <TbSeo
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/Search_engine_optimization', "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                    "_blank"
+                  )
+                }
               />
               <SiGoogleads
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://ads.google.com/', "_blank")}
+                onClick={() => window.open("https://ads.google.com/", "_blank")}
               />
               <FaFigma
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://www.figma.com/', "_blank")}
+                onClick={() => window.open("https://www.figma.com/", "_blank")}
               />
               <BiSolidTerminal
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/Bash_(Unix_shell)', "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+                    "_blank"
+                  )
+                }
               />
               <FaGitAlt
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://git-scm.com/', "_blank")}
+                onClick={() => window.open("https://git-scm.com/", "_blank")}
               />
               <FaGithub
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://github.com/', "_blank")}
+                onClick={() => window.open("https://github.com/", "_blank")}
               />
               <FaHtml5
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/HTML', "_blank")}
+                onClick={() =>
+                  window.open("https://en.wikipedia.org/wiki/HTML", "_blank")
+                }
               />
               <FaCss3Alt
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/CSS', "_blank")}
+                onClick={() =>
+                  window.open("https://en.wikipedia.org/wiki/CSS", "_blank")
+                }
               />
               <FaJs
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/JavaScript', "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://en.wikipedia.org/wiki/JavaScript",
+                    "_blank"
+                  )
+                }
               />
               <TbApi
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/API', "_blank")}
+                onClick={() =>
+                  window.open("https://en.wikipedia.org/wiki/API", "_blank")
+                }
               />
               <SiWebpack
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://webpack.js.org/', "_blank")}
+                onClick={() => window.open("https://webpack.js.org/", "_blank")}
               />
               <SiJest
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() =>  window.open(`https://jestjs.io/`, "_blank")}
+                onClick={() => window.open(`https://jestjs.io/`, "_blank")}
               />
               <FaReact
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://react.dev/', "_blank")}
+                onClick={() => window.open("https://react.dev/", "_blank")}
               />
               <RiTailwindCssFill
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://tailwindcss.com/', "_blank")}
+                onClick={() =>
+                  window.open("https://tailwindcss.com/", "_blank")
+                }
               />
               <SiNetlify
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://www.netlify.com/', "_blank")}
+                onClick={() =>
+                  window.open("https://www.netlify.com/", "_blank")
+                }
+              />
+              <FaNodeJs
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://nodejs.org/", "_blank")}
+              />
+              <SiExpress
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://expressjs.com/", "_blank")}
+              />
+              <SiNextdotjs
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://nextjs.org/", "_blank")}
+              />
+              <SiEjs
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://ejs.co/", "_blank")}
+              />
+              <SiFirebase
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() =>
+                  window.open("https://firebase.google.com/", "_blank")
+                }
+              />
+              <SiMongodb
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() =>
+                  window.open("https://www.mongodb.com/", "_blank")
+                }
+              />
+              <SiPostgresql
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() =>
+                  window.open("https://www.postgresql.org/", "_blank")
+                }
+              />
+              <SiPrisma
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://www.prisma.io/", "_blank")}
               />
             </div>
             <div className="carousel-slide flex items-center">
               <TbSeo
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/Search_engine_optimization', "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                    "_blank"
+                  )
+                }
               />
               <SiGoogleads
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://ads.google.com/', "_blank")}
+                onClick={() => window.open("https://ads.google.com/", "_blank")}
               />
               <FaFigma
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://www.figma.com/', "_blank")}
+                onClick={() => window.open("https://www.figma.com/", "_blank")}
               />
               <BiSolidTerminal
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/Bash_(Unix_shell)', "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+                    "_blank"
+                  )
+                }
               />
               <FaGitAlt
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://git-scm.com/', "_blank")}
+                onClick={() => window.open("https://git-scm.com/", "_blank")}
               />
               <FaGithub
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://github.com/', "_blank")}
+                onClick={() => window.open("https://github.com/", "_blank")}
               />
               <FaHtml5
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/HTML', "_blank")}
+                onClick={() =>
+                  window.open("https://en.wikipedia.org/wiki/HTML", "_blank")
+                }
               />
               <FaCss3Alt
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/CSS', "_blank")}
+                onClick={() =>
+                  window.open("https://en.wikipedia.org/wiki/CSS", "_blank")
+                }
               />
               <FaJs
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/JavaScript', "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://en.wikipedia.org/wiki/JavaScript",
+                    "_blank"
+                  )
+                }
               />
               <TbApi
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://en.wikipedia.org/wiki/API', "_blank")}
+                onClick={() =>
+                  window.open("https://en.wikipedia.org/wiki/API", "_blank")
+                }
               />
               <SiWebpack
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://webpack.js.org/', "_blank")}
+                onClick={() => window.open("https://webpack.js.org/", "_blank")}
               />
               <SiJest
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() =>  window.open(`https://jestjs.io/`, "_blank")}
+                onClick={() => window.open(`https://jestjs.io/`, "_blank")}
               />
               <FaReact
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://react.dev/', "_blank")}
+                onClick={() => window.open("https://react.dev/", "_blank")}
               />
               <RiTailwindCssFill
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://tailwindcss.com/', "_blank")}
+                onClick={() =>
+                  window.open("https://tailwindcss.com/", "_blank")
+                }
               />
               <SiNetlify
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
-                onClick={() => window.open('https://www.netlify.com/', "_blank")}
+                onClick={() =>
+                  window.open("https://www.netlify.com/", "_blank")
+                }
+              />
+              <FaNodeJs
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://nodejs.org/", "_blank")}
+              />
+              <SiExpress
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://expressjs.com/", "_blank")}
+              />
+              <SiNextdotjs
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://nextjs.org/", "_blank")}
+              />
+              <SiEjs
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://ejs.co/", "_blank")}
+              />
+              <SiFirebase
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() =>
+                  window.open("https://firebase.google.com/", "_blank")
+                }
+              />
+              <SiMongodb
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() =>
+                  window.open("https://www.mongodb.com/", "_blank")
+                }
+              />
+              <SiPostgresql
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() =>
+                  window.open("https://www.postgresql.org/", "_blank")
+                }
+              />
+              <SiPrisma
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://www.prisma.io/", "_blank")}
               />
             </div>
           </div>
