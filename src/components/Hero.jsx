@@ -1,5 +1,5 @@
-import heroImage from "../assets/hero-image.png";
-import avatar from "../assets/avatar.png";
+import heroImage from "../assets/hero-image.webp";
+import avatar from "../assets/avatar.webp";
 
 const Hero = () => {
   return (

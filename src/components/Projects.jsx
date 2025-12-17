@@ -1,8 +1,9 @@
 import Project from "./Project";
-import shoppingImage from "../assets/shopping-site.png";
-import cvBuilderImage from "../assets/cv-builder.png";
-import clubHouseImage from "../assets/club-house.png";
-import myBlogSite from "../assets/my-blog-site.png";
+import myBlogSite from "../assets/my-blog-site.webp";
+import odManagement from "../assets/od-management.webp";
+import festXImage from "../assets/festx.webp";
+import shoppingImage from "../assets/shopping-site.webp";
+import cvBuilderImage from "../assets/cv-builder.webp";
 
 const Projects = () => {
   return (
@@ -16,10 +17,16 @@ const Projects = () => {
           liveLink="https://madesh-blogs-user.netlify.app"
         />
         <Project
-          imageSource={clubHouseImage}
-          title="Club House"
-          githubLink="https://github.com/madesh02104/ClubHouse?tab=readme-ov-file"
-          liveLink="https://clubhouse-production-046c.up.railway.app/"
+          imageSource={odManagement}
+          title="OD Management System"
+          githubLink="https://github.com/madesh02104/"
+          liveLink="https://od-management-system.web.app/login"
+        />
+        <Project
+          imageSource={festXImage}
+          title="Festx Event Site"
+          githubLink="https://github.com/madesh02104/CSBS-FESTX-2025"
+          liveLink="https://festx.in"
         />
         <Project
           imageSource={shoppingImage}
