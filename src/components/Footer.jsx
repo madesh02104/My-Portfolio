@@ -17,17 +17,6 @@ const Footer = () => {
             {" "}
             <FaTwitter size={32} />
           </a>
-          <a href="https://leetcode.com/u/IMqC2Ksi4Y/" target="_blank">
-            {" "}
-            <SiLeetcode size={32} />
-          </a>
-          <a
-            href="https://www.geeksforgeeks.org/user/madeshlvc3/"
-            target="_blank"
-          >
-            {" "}
-            <SiGeeksforgeeks size={32} />
-          </a>
         </div>
       </section>
       <p className="text-md italic text-emerald-1000 text-center">

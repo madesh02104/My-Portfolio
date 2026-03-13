@@ -7,6 +7,8 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaDocker,
+  FaAws,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
@@ -38,7 +40,7 @@ const IKnow = () => {
                 onClick={() =>
                   window.open(
                     "https://en.wikipedia.org/wiki/Search_engine_optimization",
-                    "_blank"
+                    "_blank",
                   )
                 }
               />
@@ -55,7 +57,7 @@ const IKnow = () => {
                 onClick={() =>
                   window.open(
                     "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
-                    "_blank"
+                    "_blank",
                   )
                 }
               />
@@ -84,9 +86,17 @@ const IKnow = () => {
                 onClick={() =>
                   window.open(
                     "https://en.wikipedia.org/wiki/JavaScript",
-                    "_blank"
+                    "_blank",
                   )
                 }
+              />
+              <FaDocker
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://www.docker.com/", "_blank")}
+              />
+              <FaAws
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://aws.amazon.com/", "_blank")}
               />
               <TbApi
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
@@ -163,7 +173,7 @@ const IKnow = () => {
                 onClick={() =>
                   window.open(
                     "https://en.wikipedia.org/wiki/Search_engine_optimization",
-                    "_blank"
+                    "_blank",
                   )
                 }
               />
@@ -180,7 +190,7 @@ const IKnow = () => {
                 onClick={() =>
                   window.open(
                     "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
-                    "_blank"
+                    "_blank",
                   )
                 }
               />
@@ -209,9 +219,17 @@ const IKnow = () => {
                 onClick={() =>
                   window.open(
                     "https://en.wikipedia.org/wiki/JavaScript",
-                    "_blank"
+                    "_blank",
                   )
                 }
+              />
+              <FaDocker
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://www.docker.com/", "_blank")}
+              />
+              <FaAws
+                className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"
+                onClick={() => window.open("https://aws.amazon.com/", "_blank")}
               />
               <TbApi
                 className="carousel-icon rounded-lg hover:bg-gray-300 p-2 cursor-pointer"

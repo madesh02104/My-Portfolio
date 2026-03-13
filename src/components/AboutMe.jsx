@@ -11,10 +11,10 @@ const AboutMe = forwardRef((props, ref) => {
           <p className="font-medium text-center text-gray-900 md:text-lg">
             I&apos;m a Developer specializing in building interactive,
             responsive, high performing web applications. With solid foundation
-            in various Web concepts I have worked on various personal projects
-            in the process of learning. Currently working on to expand my area
-            of knowledge in tech. Feel free to reach me out for any project work
-            or collaboration related to development.
+            in various Web concepts I have worked on various personal and
+            progfessional projects . Learned to work on highly scalable project
+            being in this space for about 3 years. Feel free to reach me out for
+            any project work or collaboration related to development.
           </p>
         </div>
       </div>

@@ -2,8 +2,7 @@ import Project from "./Project";
 import myBlogSite from "../assets/my-blog-site.webp";
 import odManagement from "../assets/od-management.webp";
 import festXImage from "../assets/festx.webp";
-import shoppingImage from "../assets/shopping-site.webp";
-import cvBuilderImage from "../assets/cv-builder.webp";
+import stowImage from "../assets/stow.webp";
 
 const Projects = () => {
   return (
@@ -14,7 +13,7 @@ const Projects = () => {
           imageSource={myBlogSite}
           title="Personal Blog Site"
           githubLink="https://github.com/madesh02104/MyBlogSite"
-          liveLink="https://madesh-blogs-user.netlify.app"
+          liveLink="https://blogsbymadesh.live/"
         />
         <Project
           imageSource={odManagement}
@@ -29,16 +28,10 @@ const Projects = () => {
           liveLink="https://festx.in"
         />
         <Project
-          imageSource={shoppingImage}
-          title="Shopping Site"
-          githubLink="https://github.com/madesh02104/react-projects/tree/main/shopping-site"
-          liveLink="https://madesh02104-kadai.netlify.app/"
-        />
-        <Project
-          imageSource={cvBuilderImage}
-          title="CV Builder"
-          githubLink="https://github.com/madesh02104/react-projects/tree/main/cv-builder"
-          liveLink="https://madesh02104-cv-builder.netlify.app/"
+          imageSource={stowImage}
+          title="Stow"
+          githubLink="https://github.com/madesh02104/stow"
+          liveLink="https://stow-site.netlify.app/"
         />
       </div>
       <a
