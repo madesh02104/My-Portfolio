@@ -3,6 +3,7 @@ import myBlogSite from "../assets/my-blog-site.webp";
 import odManagement from "../assets/od-management.webp";
 import festXImage from "../assets/festx.webp";
 import stowImage from "../assets/stow.webp";
+import typejamImage from "../assets/typejam.webp";
 
 const Projects = () => {
   return (
@@ -32,6 +33,12 @@ const Projects = () => {
           title="Stow"
           githubLink="https://github.com/madesh02104/stow"
           liveLink="https://stow-site.netlify.app/"
+        />
+        <Project
+          imageSource={typejamImage}
+          title="TypeJam"
+          githubLink="https://github.com/madesh02104/typejam"
+          liveLink="https://typejam.netlify.app/"
         />
       </div>
       <a
