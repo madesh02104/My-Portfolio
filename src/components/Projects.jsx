@@ -2,7 +2,7 @@ import Project from "./Project";
 import myBlogSite from "../assets/my-blog-site.webp";
 import odManagement from "../assets/od-management.webp";
 import festXImage from "../assets/festx.webp";
-import stowImage from "../assets/stow.webp";
+import warmuz from "../assets/warmuz.webp";
 import typejamImage from "../assets/typejam.webp";
 
 const Projects = () => {
@@ -29,10 +29,10 @@ const Projects = () => {
           liveLink="https://festx.in"
         />
         <Project
-          imageSource={stowImage}
-          title="Stow"
-          githubLink="https://github.com/madesh02104/stow"
-          liveLink="https://stow-site.netlify.app/"
+          imageSource={warmuz}
+          title="Strait Of Warmuz"
+          githubLink="https://github.com/madesh02104/straitofwarmuz"
+          liveLink="https://straitofwarmuz.netlify.app/"
         />
         <Project
           imageSource={typejamImage}
