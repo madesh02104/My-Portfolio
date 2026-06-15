@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --color-bg: #030816;
+  --color-surface: #0a1128;
+  --color-surface-strong: #121b33;
+  --color-text: #ffffff;
+  --color-muted: #a0aec0;
+  --color-border: #2d3748;
+  --color-accent: #b794f4;
+  --color-accent-strong: #9f7aea;
+  --color-accent-soft: #44337a;
+  --color-danger: #fc8181;
+  color-scheme: dark;
+}
+
+.theme-light {
+  --color-bg: #fdfbf7;
+  --color-surface: #f4efe6;
+  --color-surface-strong: #ebe3d5;
+  --color-text: #1a202c;
+  --color-muted: #070808; 
+  --color-border: #e2e8f0;
+  --color-accent: #c05621;
+  --color-accent-strong: #9c4221;
+  --color-accent-soft: #feebc8;
+  --color-danger: #e53e3e;
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-accent-strong);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: var(--color-accent-strong);
+  color: #ffffff;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-accent-strong);
+}
+
+/* ── Layout ──────────────────────────────── */
+
+.page-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+@media (min-width: 768px) {
+  .page-wrapper {
+    max-width: 700px;
+    padding: 5rem 0 7rem;
+  }
+}
+
+/* ── Theme Toggle ────────────────────────── */
+
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.theme-toggle {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ── Section Spacing ─────────────────────── */
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── Intro ───────────────────────────────── */
+
+.intro-name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+  color: var(--color-accent);
+}
+
+.intro-role {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.intro-bio {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+/* ── Skills Tags ─────────────────────────── */
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.82rem;
+  color: var(--color-text);
+  font-weight: 500;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.skill-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ── Project Cards ───────────────────────── */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  background: var(--color-surface);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+}
+
+.project-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-surface-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  pointer-events: none; /* Let clicks pass through overlay to the card link, except for inner links */
+}
+
+.project-title-box {
+  background: rgba(10, 17, 40, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: auto;
+}
+
+.theme-light .project-title-box {
+  background: rgba(253, 251, 247, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--color-accent);
+}
+
+.project-links-box {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  background: rgba(10, 17, 40, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: auto;
+}
+
+.theme-light .project-links-box {
+  background: rgba(253, 251, 247, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-link {
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.project-link:hover {
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.project-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.projects-more {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.projects-more a {
+  color: var(--color-muted);
+}
+
+.projects-more a:hover {
+  color: var(--color-accent);
+}
+
+/* ── Blog Cards ──────────────────────────── */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.blog-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+}
+
+.blog-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.blog-item:hover .blog-title {
+  color: var(--color-accent);
+}
+
+.blog-date {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.blogs-more {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.blogs-more a {
+  color: var(--color-muted);
+}
+
+.blogs-more a:hover {
+  color: var(--color-accent);
+}
+
+/* ── Find Me ─────────────────────────────── */
+
+.social-list {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ── Footer ──────────────────────────────── */
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
