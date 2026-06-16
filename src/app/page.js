@@ -30,9 +30,13 @@ export default async function Home() {
         <ThemeToggle />
       </div>
       <Intro />
+      <hr />
       <Skills />
+      <hr />
       <Projects />
+      <hr />
       <Blogs posts={posts} />
+      <hr />
       <FindMe />
     </main>
   );
